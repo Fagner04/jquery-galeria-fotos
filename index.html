@@ -15,14 +15,36 @@
 <body>
     <header>
         <h1>Galeria de Fotos</h1>
-        <button type="button">Nova imagem +</button>
-    </header>
+        <button id="button-27" type="button" title="Add imagem">Nova imagem +</button>
+    </header> 
     <form>
         <h2>Inserir nova imagem</h2>
-        <input type="url" required placeholder="URL da imagem">
-        <button type="submit">Adicionar</button>
-        <button type="reset">Cancelar</button>
+        <input id="endereco-imagem-nova" type="url" required placeholder="URL da imagem" value="https://www.mktesportivo.com/wp-content/uploads/2021/05/botafogo-1.jpg">
+        <button id="button-27" type="submit">Adicionar</button>
+        <button id="button-cancelar" type="reset">Cancelar</button>
     </form>
+    <ul>
+        <li>
+            <img src="/img/foto1.jpg" alt="pintura gato" />
+            <div class="overlay-imagem-link"> 
+                <a href="/img/foto1.jpg" title="Ver imagem" target="_blank">ver  Imagem</a>
+            </div>
+        </li>
+        <li>
+            <img src="/img/foto2.jpg" alt="pintura gato" />
+            <div class="overlay-imagem-link"> 
+                <a href="/img/foto2.jpg" title="Ver imagem" target="_blank">Ver imagem </a>
+            </div>
+        </li>
+        <li>
+            <img src="/img/foto3.jpg" alt="pintura gato" />
+            <div class="overlay-imagem-link"> 
+                <a href="/img/foto3.jpg" title="Ver imagem" target="_blank"> Ver imagem </a>
+            </div>
+        </li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" ></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

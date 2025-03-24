@@ -4,3 +4,138 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+:root {
+    --gradient: linear-gradient(45deg,rgba(98, 79, 146, 0.659) , rgba(137, 115, 180, 0.659));
+}
+
+
+header {
+    background-color: #745e9c;
+    padding: 16px 0;
+    color: #fff;
+    display: flex;
+    border-bottom: 10px solid rgba(150, 116, 189, 0.887);
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+/* 
+.linha-gradiant{
+    background: linear-gradient(to right, #606160, #ff5f5f, #ff8d8d, #3a7c3a);
+    height: 3px;
+    width: 100%;
+}  */
+
+header button {
+    margin-left: 16px;
+
+}
+
+form button:hover {
+    transition: 300ms;
+    transform: scale(1.08);
+    box-shadow: 3px 3px rgba(237, 2, 2, 0);
+}
+
+form button {
+    box-shadow: 3px 3px rgb(134, 140, 135);
+}
+
+
+form {
+    background-color: #ffffff9e;
+    padding: 24px 0;
+    text-align: center;
+    display: none;
+}
+
+form h2 {
+    margin-bottom: 16px;
+}
+
+input,
+button {
+    padding: 8px;
+    border-radius: 7px;
+    border: solid 1px rgba(224, 218, 207, 0);
+
+}
+
+button {
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0 5px;
+}
+
+input {
+    border: #d2d2d29e 1px solid;
+}
+
+#button-27 {
+    background: linear-gradient(49deg,
+            rgba(143, 118, 200, 0.623),
+            rgba(89, 189, 99, 0.662));
+}
+
+#button-cancelar {
+    background: linear-gradient(49deg,
+            rgba(255, 2, 2, 0.623),
+            rgba(255, 4, 4, 0.662));
+}
+
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li {
+    max-width: 100%;
+    list-style: none;
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden;
+}
+
+ul li img {
+    margin: 1px; 
+    /* width: 100%; */
+    /* height: 100%; */
+    /* border-radius: 10px; */
+
+    width: 200px;
+    /* Ajuste o tamanho desejado */
+    height: 200px;
+    border-radius: 50%;
+    /* Arredonda completamente a imagem */
+    object-fit: cover;
+    /* Garante que a imagem se ajuste ao círculo */
+
+}
+
+.overlay-imagem-link {
+    padding: 5px 10px;
+    margin: 0px 30px 10px;
+    border-radius: 10px;
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* left: 0; */
+    width: 60%;
+    opacity: 0;
+    transition: all ease .5s;
+    background: var(--gradient);
+}
+
+.overlay-imagem-link a {
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+ul li:hover .overlay-imagem-link {
+    opacity: 1;
+    box-shadow: 5px 5px 5px rgba(116, 116, 116, 0.691) ;
+}
