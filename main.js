@@ -1,10 +1,10 @@
 $(document).ready(function () {
     $('header button').click(function () {
-        $('form').slideDown();
+        $('form').slideDown(); //ANIMACÃO JQUERY
     })
 
     $('#button-cancelar').click(function () {
-        $('form').slideUp();
+        $('form').slideUp(); //ANIMACÃO JQUERY
     })
 
     // // CALBACK EM JAVA-SCRIPT
@@ -30,7 +30,7 @@ $(document).ready(function () {
            </div>
         `).appendTo(novoItem);
         $(novoItem).appendTo('ul');
-        $(novoItem).fadeIn(1000);
+        $(novoItem).fadeIn(1000); //ANIMACÃO JQUERY
         $('#endereco-imagem-nova').val('')
     })
 })
